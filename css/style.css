@@ -1,0 +1,38 @@
+body{
+    margin: 0;
+}
+/* header  banner section */
+
+header{
+    background-color: #264653;
+   background-size: 100%;
+    
+}
+h1,.cus-name-pro{
+    font-family: 'Poppins', sans-serif;
+}
+.btn-light-orn{
+    background-color: #E76F51 ;
+    color: white;
+}
+
+/* <!-- Fetured Bikes 2021 section --> */
+h6 , .light-orn{ font-family: 'Poppins', sans-serif;
+    color:#E76F51 ;
+}
+.gray-scale{
+    filter: grayscale(100%);
+    transition: 2s;
+}
+.gray-scale:hover{
+    filter: grayscale(0%);
+    
+}
+img{
+    cursor: pointer;
+}
+.border-GRAY{
+    border: #E5E5E5 ;
+}
+
+
