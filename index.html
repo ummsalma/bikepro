@@ -16,11 +16,53 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet">
-
+    <!-- animation -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <header>
+
+        <nav class="navbar navbar-expand-lg navbar-dark text-end fixed-top nav-bg">
+            <div class="container-fluid">
+                <a class="navbar-brand animate__animated animate__infinite	infinite animate__flash " href="#">Scotars
+                    World</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#Fetured-Bikes">Fetured Bikes</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#our-collection" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                COLLECTIONS
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#our-collection">BIKE</a></li>
+                                <li><a class="dropdown-item" href="#our-collection">HELMET</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#our-collection">JURSY</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">QUESTIONS</a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
         <!-- header banner section -->
 
         <section class="  header-section">
@@ -29,23 +71,49 @@
                 class=" d-flex  flex-lg-row flex-md-row flex-sm-column flex-column  justify-content-lg-evenly justify-content-md-evenly justify-content-center justify-content-sm-center    py-5 ">
                 <div class=" d-flex align-items-center ms-5 mb-4">
                     <div class=" text-white">
-                        <div> <span class="m-1 ">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</span>
+                        <div> <span class="m-1 ">Honda
+                                Chemical, Biological, and Radiological 300R</span>
 
                             <h1 class="fw-bold m-1">
-                                Lorem ipsum dolor sit.
+                                Honda CBR 300R
                             </h1>
-                            <span class="m-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque,
-                                aspernatur. <br>Lorem
-                                ipsum
-                                dolor sit amet consectetur adipisicing elit. Itaque, aspernatur. <br>Lorem ipsum dolor
-                                sit
-                                amet
-                                consectetur adipisicing elit. Itaque, aspernatur.</span>
+                            <span class="m-1">In the city, the CBR300R returns an insane fuel <br> economy and has a
+                                pretty
+                                good range. Thanks to its 71 mpg rating, the 3.4-gallon fuel tank affords more than 220
+                                miles <br> of range. So, it may not fare well on the highway, but it'll get plenty of
+                                mileage
+                                around town.</span>
                         </div>
 
 
                         <div class=" mt-2">
-                            <button class="btn mt-1 px-5 btn-light-orn" type="submit">Purchase</button>
+                            <button class="btn mt-1 px-5 btn-light-orn" type="submit" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">Purchase</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-danger fw-bold " id="exampleModalLabel">CBR300R
+                                                Specifications</h5>
+                                            <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                                aria-label="Close"></button>
+                                        </div>
+                                        <div class="modal-body text-dark">
+                                            <p> Mated to a six-speed transmission, the Honda CBR300R is powered by a
+                                                286cc,
+                                                single-cylinder, liquid-cooled engine, producing 31PS of power at
+                                                8,500rpm
+                                                and a peak torque of 27Nm at 7,250rpm.</p>
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button" class="btn btn-secondary"
+                                                data-bs-dismiss="modal">Close</button>
+                                            <button type="button" class="btn btn-primary">Purchase Now</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
 
 
@@ -54,7 +122,7 @@
 
                     </div>
                 </div>
-                <div class=" "> <img src="images/banmain.png" class="img-fluid " alt=""></div>
+                <div class=" "> <img src="images/headerbike.png" class="img-fluid " alt=""></div>
             </div>
         </section>
 
@@ -62,8 +130,10 @@
     </header>
     <main>
         <article>
+            <br>
+            <br>
             <!-- Fetured Bikes 2021 section -->
-            <section>
+            <section id="Fetured-Bikes">
                 <div class=" text-center mb-3">
                     <h1 class=" mt-4">Fetured Bikes 2021</h1>
                     <h6>Best bike collection
@@ -97,7 +167,7 @@
 
 
             <!-- collection section  -->
-            <section class=" collection">
+            <section class=" collection" id="our-collection">
                 <h1 class=" ms-5 fw-bolder "> OUR COLLECTION </h1>
 
 
@@ -111,10 +181,10 @@
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="images/1.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
+                                        <h5 class="card-title">Yamaha V69D</h5>
+                                        <p class="card-text">
+                                            Yamaha is a big company that is very similar to Honda. Yamaha also offers
+                                            better </p>
                                         <span class=" fs-5 fw-bold"><del>1350$</del>
                                             800$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
@@ -127,12 +197,11 @@
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="images/2.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
-                                        <span class=" fs-5 fw-bold"><del>1350$</del>
-                                            800$</span>
+                                        <h5 class="card-title text-uppercase">riding jersey</h5>
+                                        <p class="card-text">No matter what level you ride, whether you are new to the
+                                            game or a seasoned pro, Fox motorcycle apparel and Fox dirt bike gear .</p>
+                                        <span class=" fs-5 fw-bold"><del>200$</del>
+                                            110$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
                                     </div>
                                 </div>
@@ -143,12 +212,11 @@
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="images/3.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
-                                        <span class=" fs-5 fw-bold"><del>1350$</del>
-                                            800$</span>
+                                        <h5 class="card-title">1200CC RANAR</h5>
+                                        <p class="card-text">Its engine 1200cc and it can create 132 horse power. Its
+                                            price is </p>
+                                        <span class=" fs-5 fw-bold"><del>1450$</del>
+                                            900$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
                                     </div>
                                 </div>
@@ -159,10 +227,9 @@
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="images/4.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
+                                        <h5 class="card-title">22Kymco iFlow </h5>
+                                        <p class="card-text">iFlow is not in production now. Discontinued in 2020.
+                                            22Kymco has stopped the production of i.</p>
                                         <span class=" fs-5 fw-bold"><del>1350$</del>
                                             800$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
@@ -175,12 +242,11 @@
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="images/5.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
-                                        <span class=" fs-5 fw-bold"><del>1350$</del>
-                                            800$</span>
+                                        <h5 class="card-title">Motorcycle Race Suits </h5>
+                                        <p class="card-text">est leather available, usually cowhide, although kangaroo
+                                            hide has been used. The high-quality leather</p>
+                                        <span class=" fs-5 fw-bold"><del>550$</del>
+                                            500$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
                                     </div>
                                 </div>
@@ -191,12 +257,12 @@
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="images/6.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
-                                        <span class=" fs-5 fw-bold"><del>1350$</del>
-                                            800$</span>
+                                        <h5 class="card-title">Black motorcycle helmets</h5>
+                                        <p class="card-text">
+                                            Black motorcycle helmets are popular because they're stylish and look cool.
+                                            ... A research study published in 2004 has shown that</p>
+                                        <span class=" fs-5 fw-bold"><del>300$</del>
+                                            200$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
                                     </div>
                                 </div>
@@ -208,11 +274,11 @@
                                     <img src="images/7.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
                                         <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
-                                        <span class=" fs-5 fw-bold"><del>1350$</del>
-                                            800$</span>
+                                        <p class="card-text">Black motorcycle helmets are popular because they're
+                                            stylish and look cool.
+                                            A research study published in 2004 has shown tha</p>
+                                        <span class=" fs-5 fw-bold"><del>350$</del>
+                                            200$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
                                     </div>
                                 </div>
@@ -223,10 +289,10 @@
                                 <div class="card mx-auto" style="width: 18rem;">
                                     <img src="images/8.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
                                     <div class="card-body text-center">
-                                        <h5 class="card-title">Card title</h5>
-                                        <p class="card-text">Some quick example text to build on the card title and make
-                                            up the
-                                            bulk of the card's content.</p>
+                                        <h5 class="card-title">MONSTAR BIKE 1500cc</h5>
+                                        <p class="card-text">
+                                            The Ducati 797 is a respectable entry-level bike with its main positive
+                                            being its engine can offer a long lifespan. </p>
                                         <span class=" fs-5 fw-bold"><del>1350$</del>
                                             800$</span>
                                         <a href="#" class="btn btn-danger">ORDER NOW</a>
@@ -236,6 +302,12 @@
                         </div>
 
                     </div>
+                </div>
+                <br>
+                <br>
+                <div class=" justify-content-end d-flex">
+
+                    <a href="#" class="btn btn-warning me-5">SEE MORE</a>
                 </div>
 
 
@@ -258,19 +330,17 @@
                                         class="rounded-circle mx-auto d-block img-fluid" alt="">
                                 </div>
                                 <div class=" text-center">
-                                    <p class=" mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                        sed
-                                        repellendus
-                                        consequuntur
-                                        explicabo nemo vel quod repudiandae reprehenderit ad omnis?</p>
+                                    <p class=" mt-3">It feels amazing to know that there is an increased demand for your
+                                        product, but customer experience and satisfaction are consequential for
+                                        long-lasting business growt</p>
 
 
                                     <h6 class="m-1"><i class="fas fa-star "></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="far fa-star"></i></h6>
-                                    <h6 class=" mt-2  text-info cus-name-pro fs-5">Lorem, ipsum.</h6>
+                                    <h6 class=" mt-2  text-info cus-name-pro fs-5">INIKOS LADUM</h6>
 
-                                    <span class="cus-name-pro fs-5 m-1">lorem </span>
+                                    <span class="cus-name-pro fs-5 m-1">STUDEN</span>
                                 </div>
                             </div>
 
@@ -278,23 +348,22 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
 
                             <div class=" w-75 border rounded-3 border-1 border-GRAY p-3 m-auto">
-                                <div class=" m-2"><img src="images/1.jpg"
+                                <div class=" m-2"><img src="images/2.jpg"
                                         class="rounded-circle mx-auto d-block img-fluid" alt="">
                                 </div>
                                 <div class=" text-center">
-                                    <p class=" mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                        sed
-                                        repellendus
-                                        consequuntur
-                                        explicabo nemo vel quod repudiandae reprehenderit ad omnis?</p>
+                                    <p class=" mt-3">To give without any reward, or any notice,product, but customer
+                                        experience and satisfaction are consequential for
+                                        long-lasting business growt has a special quality of
+                                        its own</p>
 
 
                                     <h6 class="m-1"><i class="fas fa-star "></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="far fa-star"></i></h6>
-                                    <h6 class=" mt-2  text-info cus-name-pro fs-5">Lorem, ipsum.</h6>
+                                    <h6 class=" mt-2  text-info cus-name-pro fs-5">ISHMA ROBR</h6>
 
-                                    <span class="cus-name-pro fs-5 m-1">lorem </span>
+                                    <span class="cus-name-pro fs-5 m-1">BUSSINESMAN</span>
                                 </div>
                             </div>
 
@@ -302,23 +371,21 @@
                         <div class="col-lg-4 col-md-6 col-sm-12 col-12">
 
                             <div class=" w-75 border rounded-3 border-1 border-GRAY p-3 m-auto">
-                                <div class=" m-2"><img src="images/1.jpg"
+                                <div class=" m-2"><img src="images/3.jpg"
                                         class="rounded-circle mx-auto d-block img-fluid" alt="">
                                 </div>
                                 <div class=" text-center">
-                                    <p class=" mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem
-                                        sed
-                                        repellendus
-                                        consequuntur
-                                        explicabo nemo vel quod repudiandae reprehenderit ad omnis?</p>
+                                    <p class=" mt-3">A person's life is limited but serving the people is limitless. I
+                                        product, but customer experience and satisfaction are consequential for
+                                        lg gds aw okay serving the people limitlessly.</p>
 
 
                                     <h6 class="m-1"><i class="fas fa-star "></i><i class="fas fa-star"></i><i
                                             class="fas fa-star"></i><i class="fas fa-star"></i><i
                                             class="far fa-star"></i></h6>
-                                    <h6 class=" mt-2  text-info cus-name-pro fs-5">Lorem, ipsum.</h6>
+                                    <h6 class=" mt-2  text-info cus-name-pro fs-5">DAVID KHAMI</h6>
 
-                                    <span class="cus-name-pro fs-5 m-1">lorem </span>
+                                    <span class="cus-name-pro fs-5 m-1">BANKER</span>
                                 </div>
                             </div>
 
@@ -333,17 +400,26 @@
         <section>
             <div class=" d-flex flex-column flex-sm-column flex-md-row flex-lg-row ">
                 <div class="d-flex align-items-center justify-content-center container ms-5">
-                    <div class="container ms-5">
-                        <h1> Lorem ipsum dolor sit.</h1>
+                    <div class="container ms-5 ">
+                        <h1 class=" Tournament text-uppercase"> bike stand challenge tournament 2022</h1>
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est atque ex cum animi aperiam sunt
-                            reprehenderit eaque architecto cupiditate mollitia laboriosam dignissimos quas rem neque,
-                            corrupti debitis accusantium ab nihil.
+                            Like evry year we are going to arrange our anual challange tournament <b>bike stand
+                                challenge tournament 2022</b>
+                            hears entry fee is 500$ which 15 days tour
+                            first price is 20000$ and more
+                            <br>
+                            so why late ?
                         </p>
-                        <button type="button" class="btn btn-primary btn-lg">Large button</button>
+                        <br>
+                        <br>
+                        <br>
+                        <div class=" d-flex justify-content-end "><button type="button"
+                                class="btn btn-dark text-uppercase fw-bold  px-5 btn-lg">register today</button></div>
                     </div>
+
+
                 </div>
-                <div class=""><img src="images/tornament.png" class=" img-fluid" alt=""></div>
+                <div class="w-100"><img src="images/tournament.png" class=" img-fluid" alt=""></div>
             </div>
         </section>
 
@@ -356,7 +432,7 @@
                 <div class=" container">
                     <div class="d-flex flex-lg-row flex-md-row flex-sm-column flex-column align-items-center ">
                         <div class="w-75">
-                            <img src="images/question.jpg" class=" img-fluid float-end" alt="">
+                            <img src="images/ques.jpeg" class=" img-fluid float-end" alt="">
 
                         </div>
                         <div class=" w-100 ">
@@ -366,7 +442,7 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseOne"
                                             aria-expanded="false" aria-controls="flush-collapseOne">
-                                            Accordion Item #1
+                                            WHATS OUR DREAM ?
                                         </button>
                                     </h2>
                                     <div id="flush-collapseOne" class="accordion-collapse collapse"
@@ -382,7 +458,7 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo"
                                             aria-expanded="false" aria-controls="flush-collapseTwo">
-                                            Accordion Item #2
+                                            WHATS OUR STRATEGY ?
                                         </button>
                                     </h2>
                                     <div id="flush-collapseTwo" class="accordion-collapse collapse"
@@ -398,7 +474,7 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseThree"
                                             aria-expanded="false" aria-controls="flush-collapseThree">
-                                            Accordion Item #3
+                                            How Can You Help Us ?
                                         </button>
                                     </h2>
                                     <div id="flush-collapseThree" class="accordion-collapse collapse"
@@ -416,7 +492,7 @@
                                         <button class="accordion-button collapsed" type="button"
                                             data-bs-toggle="collapse" data-bs-target="#flush-collapseFOUR"
                                             aria-expanded="false" aria-controls="flush-collapseFOUR">
-                                            Accordion Item #3
+                                            Is It Best Service
                                         </button>
                                     </h2>
                                     <div id="flush-collapseFOUR" class="accordion-collapse collapse"
@@ -439,139 +515,10 @@
         </article>
     </main>
 
-    <!-- <footer class=" bg-danger fw-bold text-white text-center">
+    <footer class="mt-5 bg-danger fw-bold text-white text-center">
         <h5>Copyright &#169 2021 BIKE UMME SALMA</h5>
-    </footer> -->
+    </footer>
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
-
-
-<div class=" container">
-    <div class=" row  gy-5 gx-lg-3 gx-md-3">
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/1.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class=" fs-5 fw-bold"><del>1350$</del>800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/2.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class="  fs-5 fw-bold"><del>1350$</del>800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/3.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class=" fs-5 fw-bold"><del>1350$</del> 800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/4.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class=" fs-5 fw-bold"><del>1350$</del>
-                            800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/5.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class=" fs-5 fw-bold"><del>1350$</del>800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/6.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class="  fs-5 fw-bold"><del>1350$</del>800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/7.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class=" fs-5 fw-bold"><del>1350$</del> 800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="col-lg-3 col-md-4 col-sm-6 col-12   ">
-            <div>
-                <div class="card mx-auto" style="width: 18rem;">
-                    <img src="images/8.png" class="card-img-top w-75 mx-auto  mt-3 d-block  " alt="...">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Card title</h5>
-                        <p class="card-text">Some quick example text to build on the card title and make
-                            up the
-                            bulk of the card's content.</p>
-                        <span class=" fs-5 fw-bold"><del>1350$</del>
-                            800$</span>
-                        <a href="#" class="btn btn-danger">ORDER NOW</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-    </div>
-</div>

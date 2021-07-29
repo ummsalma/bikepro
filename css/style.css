@@ -6,7 +6,16 @@ body{
 .header-section{
     background-color: #264653;
    background-size: 150%;
+   
     
+}
+.header-section h1 ,.Tournament{
+    font-size: 48px;
+
+}
+.nav-bg{
+    background-color: #2a424b6e;
+
 }
 h1,.cus-name-pro{
     font-family: 'Poppins', sans-serif;
