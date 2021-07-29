@@ -3,9 +3,9 @@ body{
 }
 /* header  banner section */
 
-header{
+.header-section{
     background-color: #264653;
-   background-size: 100%;
+   background-size: 150%;
     
 }
 h1,.cus-name-pro{
@@ -33,6 +33,11 @@ img{
 }
 .border-GRAY{
     border: #E5E5E5 ;
+}
+/* collection */
+.collection h1{
+    color: rgb(160, 14, 14);
+    font-size: 56px;
 }
 
 
